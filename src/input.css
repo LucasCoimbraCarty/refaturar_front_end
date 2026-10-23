@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --font-body: "Urbanist", sans-serif;
+    --color-light: #F8E7D4;
+    --color-dark: #342717;
+    --text-sm: 1.2rem;
+    --text-lg: clamp(2.5rem, 5vw + 1rem, 6rem);
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --radius-md: 1rem;
+    --animation-play-state: paused;
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}

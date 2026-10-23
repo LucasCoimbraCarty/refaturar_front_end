@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint-05 - Refatoração com Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./dist/css/styles.css">
+</head>
+
+<body class="font-body m-0 p-0">
+
+    <section class="min-h-dvh bg-[url(../../images/banner0.jpg)] bg-no-repeat bg-cover bg-center p-md flex flex-col justify-center items-start gap-md ">
+        <h1 class="text-light text-lg leading-tight max-lg:w-4/5 w-1/2 text-balance font-bold ">Encontre o tênis que combina com você.</h1>
+        <a href="#" class="bg-light py-sm px-lg text-dark rounded-md text-sm  font-semibold">Comprar agora</a>
+    </section>
+
+    <section class="w-9/10 my-xl mx-auto text-center grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-lg:gap-y-lg grid-cols-3 gap-x-md font-semibold text-sm">
+        <div class="relative ">
+            <img class="rounded-md block w-full" src="./images/tenis01.jpg" alt="compre seu tênis">
+            <a href="" class="absolute left-md bottom-md py-sm px-lg bg-dark  text-light text-balance rounded-md ">Comprar agora</a>
+        </div>
+        <div class="relative">
+            <img class="rounded-md block w-full" src="./images/tenis02.jpg" alt="compre seu tênis">
+            <a href="" class="absolute left-md bottom-md py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar agora</a>
+        </div>
+        <div class="relative max-lg:last:col-span-2 max-sm:last:col-span-1">
+            <img class="rounded-md block w-full" src="./images/tenis03.jpg" alt="compre seu tênis">
+            <a href="" class="absolute left-md bottom-md py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar agora</a>
+        </div>
+    </section>
+
+    <section class="overflow-hidden flex group animation-play-state">
+        <div class="flex items-center content-center shrink-0 animate-[slide_10s_linear_infinite] group-hover:[animation-play-state:paused]">
+            <a href=""><img src="./images/marcas/adidas.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Adidas" loading="lazy"></a>
+            <a href=""><img src="./images/marcas/asics.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Asics"></a>
+            <a href=""><img src="./images/marcas/converse.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Converse"></a>
+            <a href=""><img src="./images/marcas/joma.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Joma"></a>
+            <a href=""><img src="./images/marcas/jordan.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Jordan"></a>
+            <a href=""><img src="./images/marcas/lacoste.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Lacoste"></a>
+            <a href=""><img src="./images/marcas/mizuno.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100"alt="Logo Mizuno"></a>
+            <a href=""><img src="./images/marcas/nike.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Nike"></a>
+            <a href=""><img src="./images/marcas/nord.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Nord"></a>
+            <a href=""><img src="./images/marcas/puma.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Puma"></a>
+            <a href=""><img src="./images/marcas/reebok.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Reebok"></a>
+            <a href=""><img src="./images/marcas/umbro.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Umbro"></a>
+            <a href=""><img src="./images/marcas/under-armour.webp" class="w-auto h-20 my-0 mx-sm opacity-60 hover:opacity-100" alt="Logo Under-Armour"></a>
+        </div>
+    </section>
+
+    <section class="w-9/10 my-xl mx-auto text-center grid grid-cols-3 gap-x-md">
+        <h2 class="col-span-full text-lg mb-md text-dark font-bold">Coleção 2026</h2>
+        <div class="col-span-full grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-md font-bold text-sm">
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis04.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis05.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis06.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis07.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis04.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis05.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis06.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+            <div class="rounded-md border border-red-50 pb-md">
+                <img src="./images/tenis07.jpg" class="rounded-tl-md rounded-tr-md block w-full" alt="compre seu tênis" loading="lazy">
+                <h3 class="my-md">R$ 999,99</h3>
+                <a href="" class="py-sm px-lg bg-dark text-light text-balance rounded-md ">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-9/10 my-xl mx-auto text-center grid grid-cols-3 gap-x-md">
+        <h2 class="col-span-full text-lg mb-md text-dark font-bold ">Novos modelos</h2>
+        <div class="grid grid-cols-2 col-span-full auto-rows-100 gap-md max-lg:grid-cols-1 max-lg:auto-rows-auto">
+            <div class="overflow-hidden rounded-md row-span-2 max-lg:row-span-1"><img class="h-full object-cover block w-full" src="./images/tenis08.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-md"><img class="h-full object-cover block w-full" src="./images/tenis010.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-md"><img class="h-full object-cover block w-full" src="./images/tenis09.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-md col-span-2 max-lg:col-span-1 "><img class="h-full object-cover block w-full" src="./images/tenis011.png" alt="compre seu tênis" loading="lazy"></div>
+        </div>
+    </section>
+
+    <script src="./js/scroll.js"></script>
+</body>
+
+</html>
