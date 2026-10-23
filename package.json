@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch"
+      "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch",
+      "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css"
   },
   "keywords": [],
   "type": "commonjs",
